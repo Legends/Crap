@@ -7,7 +7,7 @@
         console.log(href);
         var idx = href.indexOf("#");
         if (idx !== -1) {
-            let newurl = href.substring(idx, (href.length - idx));
+            let newurl = href.substring(idx, href.length);
             $a.attr("href", newurl);
         }
     });
